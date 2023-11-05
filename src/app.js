@@ -6,6 +6,7 @@ import { CustomMessage } from './modules/custom-message.module'
 import { QuoteMessage } from './modules/quote.module'
 import {ShapeModule} from './modules/shape.module'
 import {Sound} from './modules/sound.module'
+import { Timer } from './modules/timer'
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'main-container'
@@ -34,6 +35,7 @@ const message = new CustomMessage('show-message', 'Сообщение польз
 const quotemessage = new QuoteMessage('show-quotemessage', 'Случайная цитата')
 const figure = new ShapeModule('create-figure', 'Случайная фигура')
 const sound = new Sound('make-sound', 'Случайный звук')
+const timer = new Timer('show-timer', 'Таймер')
 
 let ownMenu = new ContextMenu('.menu')
 
@@ -43,4 +45,4 @@ ownMenu.add(message)
 ownMenu.add(quotemessage)
 ownMenu.add(figure)
 ownMenu.add(sound)
-
+ownMenu.add(timer)
