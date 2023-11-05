@@ -4,6 +4,7 @@ import { BackgroundModule } from './modules/background.module'
 import { ClicksModule } from './modules/clicks.module'
 import { CustomMessage } from './modules/custom-message.module'
 import { QuoteMessage } from './modules/quote.module'
+import {ShapeModule} from './modules/figure.module';
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'main-container'
@@ -30,10 +31,12 @@ const background = new BackgroundModule('change-background','Изменить ц
 const click = new ClicksModule('count-clicks', 'Считаем клики')
 const message = new CustomMessage('show-message', 'Кастомное сообщение')
 const quotemessage = new QuoteMessage('show-quotemessage', 'Показать случайную цитату')
+const figure = new ShapeModule('create-figure', 'Показать фигуру')
 
-let ownMenu = new ContextMenu('.menu')
+let ownMenu = new ContextMenu('.menu');
 
 ownMenu.add(background)
 ownMenu.add(click)
 ownMenu.add(message)
 ownMenu.add(quotemessage)
+ownMenu.add(figure)
