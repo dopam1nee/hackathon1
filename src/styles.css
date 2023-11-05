@@ -140,6 +140,10 @@ body {
 
 .timer {
 border: 1px solid black;
+border-radius: 15%;
 position: absolute;
-background: #343434;
+top: 5%;
+left: 5%;
+background: grey;
+color: #e2e2e2;
 }

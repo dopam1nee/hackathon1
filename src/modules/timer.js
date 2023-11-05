@@ -1,7 +1,7 @@
 import { Module } from "../core/module";
 
 export class Timer extends Module {
-  time = 2;
+  time = 7;
 
   trigger() {
     let workPart = document.querySelector(".work-part");
@@ -23,10 +23,6 @@ export class Timer extends Module {
     setTimeout(() => {
         this.time = 0;
         createTimer.remove()
-      }, `${this.time * 1500}`);
+      }, `${this.time * 1100}`);
   }
-
-//   if (createTimer){
-//     createTimer.remove()
-//   }
 }
