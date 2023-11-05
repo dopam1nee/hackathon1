@@ -3,6 +3,7 @@ import {ContextMenu} from './menu';
 import {BackgroundModule} from './modules/background.module';
 import {ClicksModule} from './modules/clicks.module';
 import {CustomMessage} from './modules/custom-message.module';
+import {Sound} from './modules/sound.module';
 
 const mainContainer = document.createElement('div');
 mainContainer.className = 'main-container';
@@ -29,13 +30,13 @@ mainContainer.append(pageHead, workPart)
 const background = new BackgroundModule('change-background', 'Изменить цвет фона');
 const click = new ClicksModule('count-clicks', 'Считаем клики');
 const message = new CustomMessage('show-message', 'Показать сообщение');
-
+const sound = new Sound('make-sound', 'Случайный звук');
 let ownMenu = new ContextMenu('.menu');
 
 ownMenu.add(background);
 ownMenu.add(click);
 ownMenu.add(message);
-
+ownMenu.add(sound);
 
 
 
