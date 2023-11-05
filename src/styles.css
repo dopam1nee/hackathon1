@@ -85,8 +85,8 @@ body {
     right: 0;
     padding: 25px;
     text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /*border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
     font: italic 1.7rem "Fira Sans", serif;
     letter-spacing: 4px;
     word-spacing: 10px;

@@ -20,5 +20,16 @@ export class CustomMessage extends Module {
       }, parseInt(duration))
     }
     showCustomMessage()
+    setTimeout(() => {
+      quote.classList.add('open')
+    }, 0)
+
+    setTimeout(() => {
+      quote.classList.remove('open')
+    }, 3000)
+
+    setTimeout(() => {
+      quote.remove()
+    }, 4000)
   }
 }

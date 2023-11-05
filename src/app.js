@@ -28,14 +28,14 @@ startImg.src = '../src/core/assets/HIS-illustr-770x539.png'
 workPart.append(startImg)
 mainContainer.append(pageHead, workPart)
 
-const background = new BackgroundModule('change-background','Изменить цвет фона')
-const click = new ClicksModule('count-clicks', 'Считаем клики')
-const message = new CustomMessage('show-message', 'Кастомное сообщение')
-const quotemessage = new QuoteMessage('show-quotemessage', 'Показать случайную цитату')
-const figure = new ShapeModule('create-figure', 'Показать фигуру')
+const background = new BackgroundModule('change-background','Смена фона')
+const click = new ClicksModule('count-clicks', 'Счётчик кликов')
+const message = new CustomMessage('show-message', 'Сообщение пользователя')
+const quotemessage = new QuoteMessage('show-quotemessage', 'Случайная цитата')
+const figure = new ShapeModule('create-figure', 'Случайная фигура')
 const sound = new Sound('make-sound', 'Случайный звук')
 
-let ownMenu = new ContextMenu('.menu');
+let ownMenu = new ContextMenu('.menu')
 
 ownMenu.add(background)
 ownMenu.add(click)
