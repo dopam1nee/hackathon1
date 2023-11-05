@@ -17,7 +17,7 @@ export class CustomMessage extends Module {
 
       setTimeout(function () {
         customMessage.remove() // Удалить элемент после заданной задержки
-        }, parseInt(duration))
+      }, parseInt(duration))
     }
     showCustomMessage()
   }
