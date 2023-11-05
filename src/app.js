@@ -2,7 +2,7 @@ import './styles.css'
 import { ContextMenu } from './menu'
 import { BackgroundModule } from './modules/background.module'
 import { ClicksModule } from './modules/clicks.module'
-import { CustomMessage } from './modules/customMessage.module'
+import { CustomMessage } from './modules/custom-message.module'
 import { QuoteMessage } from './modules/quote.module'
 
 const mainContainer = document.createElement('div')
@@ -14,7 +14,7 @@ mainContainer.append(listItem)
 
 const pageHead = document.createElement('div')
 pageHead.className = 'header'
-pageHead.textContent = 'HACKATON TEAM 2'
+pageHead.textContent = 'HACKATHON TEAM 2'
 
 const workPart = document.createElement('div')
 workPart.className = 'work-part'

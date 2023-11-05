@@ -40,8 +40,6 @@ export class BackgroundModule extends Module {
     ]
   }
   
-  
-
   trigger() {
 
     const randomColor = random(0, this.workPartBackground.length-1)

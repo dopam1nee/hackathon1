@@ -11,22 +11,13 @@ export class ClicksModule extends Module {
   }
   trigger() {
     this.timer = prompt('Таймер в секундах')
-    window.addEventListener('mousedown', () => {
-      this.count++
-      console.log('count', this.count) // нужен только для проверки
-    })
-    // setInterval(() => {
-    //   if (this.timer > 0) {
-    //     console.log(`Таймер = ${(this.timer -= 1)} `)
-    //   }
-    // }, 1000)
+    window.addEventListener('mousedown', this.counting)
+
     setTimeout(() => {
       this.result = this.count
-      window.removeEventListener('mousedown', () => {
-        this.count++
-        // console.log('count', this.count) // нужен только для проверки
-      })
+      window.removeEventListener('mousedown', this.counting)
       alert(`Количество кликов ${this.result}`)
+      this.count = 0
     }, `${this.timer * 1000}`)
   }
 }
