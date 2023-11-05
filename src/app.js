@@ -4,6 +4,7 @@ import { BackgroundModule } from './modules/background.module'
 import { ClicksModule } from './modules/clicks.module'
 import { CustomMessage } from './modules/customMessage.module'
 import { QuoteMessage } from './modules/quote.module'
+import { Timer } from './modules/timer'
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'main-container'
@@ -14,7 +15,7 @@ mainContainer.append(listItem)
 
 const pageHead = document.createElement('div')
 pageHead.className = 'header'
-pageHead.textContent = 'HACKATON TEAM 2'
+pageHead.textContent = 'HACKATHON TEAM 2'
 
 const workPart = document.createElement('div')
 workPart.className = 'work-part'
@@ -30,6 +31,7 @@ const background = new BackgroundModule('change-background','Изменить ц
 const click = new ClicksModule('count-clicks', 'Считаем клики')
 const message = new CustomMessage('show-message', 'Кастомное сообщение')
 const quotemessage = new QuoteMessage('show-quotemessage', 'Показать случайную цитату')
+const timer = new Timer('show-timer', 'Создать таймер')
 
 let ownMenu = new ContextMenu('.menu')
 
@@ -37,3 +39,4 @@ ownMenu.add(background)
 ownMenu.add(click)
 ownMenu.add(message)
 ownMenu.add(quotemessage)
+ownMenu.add(timer)

@@ -92,10 +92,11 @@ body {
     background: #343434;
     color: #fdf8f4;
     z-index: 2;
+    opacity: 0.85;
 }
 
 .work-part {
-    background: powderblue;
+    background-color: powderblue;
     position: absolute;
     top: 80px;
     left: 0;
@@ -135,4 +136,10 @@ body {
     color: #fff;
     border-radius: 5px;
     padding: 10px;
+}
+
+.timer {
+border: 1px solid black;
+position: absolute;
+background: #343434;
 }
