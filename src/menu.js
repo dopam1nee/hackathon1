@@ -2,6 +2,24 @@ import {Menu} from './core/menu';
 
 
 export class ContextMenu extends Menu {
+  #modules
+
+  constructor(type, text) {
+    super(type, text)
+    this.#modules = []
+    this.open()
+
+    this.el.addEventListener("click", (event) => {
+      const li = event.target.closest("li");
+      const liDataType = event.target.dataset.type;
+      
+      if(li) {
+        const currentModule = this.#modules.find((module) => module.type === liDataType);
+        currentModule.trigger();
+        this.el.classList.remove('open');
+      }
+    });
+  }
 
   open() {
     let menu = this.el;
@@ -42,26 +60,9 @@ export class ContextMenu extends Menu {
   }
 
   add(module) {
-    return module.toHTML()
-  }
-
-  createMenuItem(modules) {
+    this.#modules.push(module)
+    this.el.insertAdjacentHTML('beforeend', module.toHTML())
     
-    modules.forEach((module) => {
-      const itemCode = this.add(module);
-      this.el.innerHTML += itemCode;
-    })
-
-    this.el.addEventListener("click", (event) => {
-      const li = event.target.closest("li");
-      const liDataType = event.target.dataset.type;
-      
-      if (li) {
-        const currentModule = modules.find((module) => module.type === liDataType);
-        currentModule.trigger();
-        this.el.classList.remove('open');
-      }
-    });
   }
 
 }
