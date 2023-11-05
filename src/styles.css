@@ -18,10 +18,11 @@ body {
     position: fixed;
     z-index: 1000;
     width: 150px;
-    background: #1b1a1a;
+    background: #c8e6fa;
     border-radius: 5px;
     display: none;
     list-style: none;
+    opacity: 0;
 }
 
 .menu.open {
@@ -31,14 +32,101 @@ body {
 .menu .menu-item {
     padding: 8px 10px;
     font-size: 1rem;
-    color: #eee;
+    color: #30709b;
     cursor: pointer;
     transition: background-color .2s ease-in;
     border-radius: inherit;
+
 }
 
 .menu .menu-item:hover {
+    background: #7fc4f1;
+    text-shadow:
+    -0.5px -0.5px 0.5px #1e181c,
+    1px 1px 0.5px #52424d;
+}
+
+.quote {
+    position:absolute;
+    width: 500px;
+    bottom:50px;
+    right:50px;
+    padding-left: 50px;
+    border-left: 4px solid #e2e2e2;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .quote.open {
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  
+  .quote p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #333333;
+  }
+
+  .quote cite {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: #aaaaaa;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font: italic 1.7rem "Fira Sans", serif;
+    letter-spacing: 4px;
+    word-spacing: 10px;
     background: #343434;
+    color: #fdf8f4;
+    z-index: 2;
+}
+
+.work-part {
+    background: powderblue;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+.work-part.change {
+  background-color: ;
+}
+*/
+
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+
+.buttom-background {
+    border: 1px solid gray;
+    color: #fff;
+    background: #343434;
+    padding: 8px;
+    position: absolute;
+    top: 25px;
+
 }
 
 #customMessage {

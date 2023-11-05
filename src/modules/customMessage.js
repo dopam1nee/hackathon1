@@ -1,7 +1,7 @@
 import { Module } from '../core/module'
 
 export class CustomMessage extends Module {
-  constructor(selector) {
+  trigger() {
     function showCustomMessage() {
       const message = prompt('Введите текст сообщения:')
       if (!message) return // Если пользователь не ввел текст, просто выходим
