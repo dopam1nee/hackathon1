@@ -4,9 +4,9 @@ import { BackgroundModule } from './modules/background.module'
 import { ClicksModule } from './modules/clicks.module'
 import { CustomMessage } from './modules/custom-message.module'
 import { QuoteMessage } from './modules/quote.module'
-import {ShapeModule} from './modules/shape.module'
-import {Sound} from './modules/sound.module'
-import { Timer } from './modules/timer'
+import { ShapeModule } from './modules/shape.module'
+import { Sound } from './modules/sound.module'
+import { Timer } from './modules/timer.module'
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'main-container'

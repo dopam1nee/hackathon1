@@ -37,7 +37,7 @@ export class BackgroundModule extends Module {
       {
         backgroundColor: `rgb(153, 153, 204)`,
       },
-    ];
+    ]
   }
   
   trigger() {
