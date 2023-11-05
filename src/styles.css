@@ -130,9 +130,9 @@ body {
 }
 
 #customMessage {
-    top: 10px;
-    left: 10px;
     position: fixed;
+    top: 90px;
+    left: 10px;
     background-color: #00ffff;
     color: #fff;
     border-radius: 5px;

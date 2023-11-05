@@ -2,7 +2,7 @@ import './styles.css'
 import { ContextMenu } from './menu'
 import { BackgroundModule } from './modules/background.module'
 import { ClicksModule } from './modules/clicks.module'
-import { CustomMessage } from './modules/custom-message.module'
+import { CustomMessage } from './modules/customMessage.module'
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'main-container'
