@@ -5,7 +5,7 @@ export class BackgroundModule extends Module {
 
   constructor(type, text) {
 
-    super(type, text);
+    super(type, text)
     this.workPartBackground = [
       {
         backgroundColor: `rgb(153, 153, 153)`,
@@ -36,18 +36,17 @@ export class BackgroundModule extends Module {
       },
       {
         backgroundColor: `rgb(153, 153, 204)`,
-      
       },
-    ];
+    ]
   }
   
   
 
   trigger() {
 
-    const randomColor = random(0, this.workPartBackground.length-1);
-    const workPart = document.querySelector('.work-part');
-    const randomBackgroundColor = this.workPartBackground[randomColor];
-    workPart.style.backgroundColor = randomBackgroundColor.backgroundColor;
+    const randomColor = random(0, this.workPartBackground.length-1)
+    const workPart = document.querySelector('.work-part')
+    const randomBackgroundColor = this.workPartBackground[randomColor]
+    workPart.style.backgroundColor = randomBackgroundColor.backgroundColor
   }
 }
