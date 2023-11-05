@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Module} from '../core/module';
 import {random} from '../utils';
 
@@ -20,4 +21,10 @@ export class BackgroundModule extends Module {
   }
 
 
+=======
+import {Module} from '../core/module'
+
+export class BackgroundModule extends Module {
+
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
 }

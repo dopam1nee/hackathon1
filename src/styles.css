@@ -25,11 +25,16 @@ body {
     opacity: 0;
 }
 
+<<<<<<< HEAD
 
 .menu.open {
     display: block;
 
     
+=======
+.menu.open {
+    display: block;
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
 }
 
 .menu .menu-item {
@@ -49,7 +54,10 @@ body {
     1px 1px 0.5px #52424d;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
 .quote {
     position:absolute;
     width: 500px;
@@ -60,7 +68,10 @@ body {
     font-family: 'Georgia', 'Times New Roman', serif;
     opacity: 0;
     transition: opacity 1s ease;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
   }
 
   .quote.open {
@@ -75,6 +86,10 @@ body {
     line-height: 28px;
     color: #333333;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
   .quote cite {
     font-style: italic;
     font-weight: normal;
@@ -83,7 +98,10 @@ body {
     color: #aaaaaa;
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
   .header {
     position: fixed;
     top: 0;
@@ -101,7 +119,10 @@ body {
     z-index: 2;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
 .work-part {
     background: powderblue;
     position: absolute;
@@ -125,8 +146,11 @@ body {
   opacity: 0.4;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
 .buttom-background {
     border: 1px solid gray;
     color: #fff;
@@ -136,3 +160,16 @@ body {
     top: 25px;
 
 }
+<<<<<<< HEAD
+=======
+
+#customMessage {
+    position: fixed;
+    top: 90px;
+    left: 10px;
+    background-color: #00ffff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+>>>>>>> 9a64c9f5b9af425389de372b42fe33ab308359e5
