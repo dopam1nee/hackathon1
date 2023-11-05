@@ -26,7 +26,7 @@ export class ClicksModule extends Module {
         this.count++
         // console.log('count', this.count) // нужен только для проверки
       })
-      alert(`Количество кликов = ${this.result}`)
+      alert(`Количество кликов ${this.result}`)
     }, `${this.timer * 1000}`)
   }
 }

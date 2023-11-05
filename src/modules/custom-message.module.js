@@ -1,19 +1,17 @@
-import {random} from '../utils'
-import {Module} from '../core/module'
+import { random } from '../utils'
+import { Module } from '../core/module'
 
-export class CustomMessage extends Module {
-
+export class QuoteMessage extends Module {
   constructor(type, text) {
-
     super(type, text)
-    this.customMessage = [
+    this.quoteMessage = [
       {
         text: 'Велики те, кто видит, что миром правят мысли..',
         author: 'Ральф Эмерсон',
         id: 1,
       },
       {
-        text: 'Если вы думаете, что на что-то способны, вы правы если думаете, что у вас ничего не получится - вы тоже правы.',
+        text: 'Если вы думаете, что на что-то способны, вы правы; если думаете, что у вас ничего не получится - вы тоже правы.',
         author: 'Генри Форд',
         id: 2,
       },
@@ -24,25 +22,24 @@ export class CustomMessage extends Module {
       },
     ]
   }
-  
+
   trigger() {
-    
-    const randomNumber = random(0, this.customMessage.length-1)
+    const randomNumber = random(0, this.quoteMessage.length - 1)
     const mainContainer = document.querySelector('.main-container')
-    
+
     const quote = document.createElement('blockquote')
     quote.className = 'quote'
-    quote.id = this.customMessage[randomNumber].id
-    
+    quote.id = this.quoteMessage[randomNumber].id
+
     const customText = document.createElement('p')
-    customText.textContent = this.customMessage[randomNumber].text
+    customText.textContent = this.quoteMessage[randomNumber].text
 
     const autorForText = document.createElement('cite')
-    autorForText.textContent = this.customMessage[randomNumber].author
-    
+    autorForText.textContent = this.quoteMessage[randomNumber].author
+
     quote.append(customText, autorForText)
     mainContainer.append(quote)
-    
+
     setTimeout(() => {
       quote.classList.add('open')
     }, 0)
@@ -54,10 +51,5 @@ export class CustomMessage extends Module {
     setTimeout(() => {
       quote.remove()
     }, 4000)
-    
   }
-
 }
-
-
-
